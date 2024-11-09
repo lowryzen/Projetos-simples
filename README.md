@@ -7,5 +7,5 @@ Projetos simples que eu criei utilizando os meus conhecimentos básicos do pytho
 
 -O que eu entendo parcialmente:
  ● Loops (for in, while)        
- ● Criação de funções (def())          
+ ● Criação de funções (def())                              
 
