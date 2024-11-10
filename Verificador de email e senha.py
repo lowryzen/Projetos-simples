@@ -1,18 +1,21 @@
-# verificador de email e senha 1.0
+# verificador de email e senha 1.1
 
-email = str(input("insira seu email: "))
-senha = input("insira sua senha:")
+def email():
+    bloco1 = str(input("Seu nome: "))
+    bloco2 = input("Sua senha:")
 
-dominio = "@gmail.com"
+    bloco_email = bloco1 + "@gmail.com"
 
-dominio_final = (email + "@gmail.com")
+    verificador = input("Digite seu email completo: ")
+    verificador2 = input("Digite sua senha novamente: ")
 
-email_final = input("insira seu email novamente:")
-senha_final = input("insira sua senha:")
+    if verificador == bloco_email:
+        if verificador2 == bloco2:
+            return "Você logou com sucesso."
+        else:
+            return "Email ou senha incorretos"
+    else:
+        return "Email ou senha incorretos"
 
-if email_final == dominio_final:
-    if senha_final == senha:
-        print ("você entrou com sucesso")
-else:
-    print ("email ou senha incorretos")
+print (email())
 
