@@ -1,4 +1,4 @@
-#Validador de nome de usuário e senha
+#Validador de nome de usuário e senha 0.9
 
 print ('''Instruções: Seu nome de usuário não pode ter mais que 12 letras,
 não pode ter espaço e nem números''')
