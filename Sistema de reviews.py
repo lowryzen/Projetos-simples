@@ -1,11 +1,10 @@
 class Analise:
-    def __init__(self, reviews=None):
-        if reviews is None:
-            reviews = {}
-        self.reviews = reviews
 
-    def todas_reviews(self) -> None:
-        print(self.reviews)
+    todas_reviews = {}
 
-    def adicionar_reviews(self, nome, avaliacao) -> None:
-        self.reviews[nome] = avaliacao
+    def __init__(self):
+        self.review = {}
+
+    def adicionar(self, add:dict):
+        self.review.update(add)
+        Analise.todas_reviews.update(self.review)
