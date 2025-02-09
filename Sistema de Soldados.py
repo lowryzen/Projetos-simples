@@ -1,7 +1,4 @@
-# Problema 1: pontos de ação tão ficando negativos
-
 from abc import ABC, abstractmethod
-
 
 class Soldados(ABC):
 
@@ -69,7 +66,10 @@ class Cavaleiros(Soldados):
 
     def atacar_com(self, equipamento):
         if self.pontos_acao - 6 >= 0:
-            print(f"{self.nome} está atacando com {equipamento}")
-            self.pontos_acao -= 6
+            if equipamento in self.inventario:
+                print(f"{self.nome} está atacando com {equipamento}")
+                self.pontos_acao -= 6
+            else:
+                print(f"{self.nome} não tem {equipamento} pra usar")
         else:
             print(f"{self.nome} não pode mais agir")
