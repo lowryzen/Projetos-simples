@@ -73,11 +73,3 @@ class Cavaleiros(Soldados):
             self.pontos_acao -= 6
         else:
             print(f"{self.nome} não pode mais agir")
-
-
-reginaldo = Cavaleiros("Reginaldo", "Templarios")
-
-reginaldo.defender()
-reginaldo.defender()
-reginaldo.avancar(5)
-print(reginaldo.pontos_acao)
